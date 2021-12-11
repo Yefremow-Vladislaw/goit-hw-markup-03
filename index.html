@@ -10,37 +10,42 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,900;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <title>Студия</title>
 </head>
 <body>
+    <div class="container">
     <header class="header-section">
+        <section class="logo-section">
     <a class="site-logo" href="/index.html"><span class="logo-prefix">Web</span>Studio</a>
+        </section>           
 <!-- WebStudio navigation -->
-    <nav>
-        <ul>
-        <li><a class="link-nav" href="">Студия</a></li>
-        <li><a class="link-nav" href="portpholio.html">Портфолио</a></li>
-        <li><a class="link-nav" href="#contacts">Контакты</a></li>
+    <nav >
+        <ul class="site-nav">
+        <li class="item"><a class="link-nav" href="">Студия</a></li>
+        <li class="item"><a class="link-nav" href="portpholio.html">Портфолио</a></li>
+        <li class="item"><a class="link-nav" href="#contacts">Контакты</a></li>
         </ul>   
     </nav>
-<!-- Headers contacts list-->
-        <ul>
-            <li><a class="contacts-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="contacts-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+<!-- Header contacts list-->
+        <ul class="auth-nav">
+            <li class="auth-item"><a class="contacts-header" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="auth=-item"><a class="contacts-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </header>
-    <main class="main-section">
+    <main class="main-section section">
+        
 <!-- If you want to order our services -->
-        <section>
-        <h1 class="studio-main-header">Эффективные решения для вашего бизнеса</h1>
+        <section class="order-service section">
+        <h1 class="studio-main-header">Эффективные решения
+             для вашего бизнеса</h1>
         <button class="order-service" type="button">
             Заказать услугу
         </button>
         </section>
 <!-- Our advantages -->
-        <section>
-            <h2>Чем мы занимаемся</h2>
-        <ul>
+        <section class="section">
+        <ul class ="our-advantages">
             <li>
                 <h3 class="our-advantages-header">Внимание к деталям</h3>
                 <p class="our-advantages-desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -60,9 +65,9 @@
         </ul>
         </section>
 <!-- What are we do ? -->
-        <section>
+        <section class="section">
         <h2 class="we-do-header">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="we-do-list">
             <li>
                 <img src="images/box-1.jpg" alt="box-1" width="370" height="294">
 
@@ -76,9 +81,9 @@
         </ul>
         </section>
 <!--Heroes -->
-        <section>
+        <section class="section"> 
         <h2 class="we-do-header">Наша команда</h2>
-        <ul>
+        <ul class="heroes">
             <li>
                 <img src="images/photo-1.jpg" alt="photo-1" width="270" height="260">
                 <h3 class="hero-name">Игорь Демьяненко</h3>
@@ -113,5 +118,6 @@
             </ul>
         </address>
     </footer>
+    </div>
 </body>
 </html>
