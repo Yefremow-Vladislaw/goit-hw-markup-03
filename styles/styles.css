@@ -5,9 +5,14 @@ body {
 }
 h1,
 h2,
-h3 p {
+h3,
+p {
   padding: 0px;
   margin: 0px;
+}
+img,
+a {
+  display: block;
 }
 .header-section,
 .main-section {
@@ -167,52 +172,107 @@ ul {
 
 /* Позиционирование элементов на странице */
 .container {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
+  padding: 15px;
 }
-/* .studio-main-header {
-  padding: 200px 452px 280px;
-  margin: 0 auto;
-} */
+.section {
+  width: 100%;
+  padding: 0 215px;
+  /* justify-content: center; */
+}
+.section:not(:first-child, :last-child) {
+  padding-bottom: 94px;
+}
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
 .link-nav {
   display: block;
-  background-color: aqua;
-  padding: 25px;
-  margin-left: 25px;
+  /* background-color: aqua; */
+  padding: 25px 0px;
 }
+.nav-section,
 .site-nav,
 .auth-nav {
   display: flex;
 }
+.nav-section {
+  margin-right: auto;
+}
 .contacts-header {
   display: block;
-}
-.header-section {
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: auto;
-  align-items: center;
-}
-.logo-section {
-  margin-right: 93px;
   padding: 25px 0px;
 }
-.our-advantages,
-.we-do-list,
-.heroes {
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-logo {
+  padding: 25px 0px;
+}
+.logo-section {
+  margin-right: auto;
   display: flex;
 }
-.section {
-  padding-bottom: 94px;
-  padding-top: 50px;
-}
-.order-service {
+.order-section {
+  padding-top: 200px;
+  padding-bottom: 260px;
   background-color: #2f303a;
 }
-.studio-main-header {
-  display: flex;
-  /* padding: 200px 0px 30px 0px; */
-  margin: 0 auto;
+.order-list {
   text-align: center;
-  white-space: pre;
+}
+.studio-main-header {
+  padding-bottom: 40px;
+}
+.order-service {
+  align-items: center;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.advantages-section {
+  padding-top: 94px;
+}
+.cards-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.cards-grid > .advantages-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  /* margin-top: 30px; */
+}
+.cards-grid > .we-do-item {
+  flex-basis: calc(100% / 3- 30px);
+  margin-left: 30px;
+}
+.cards-grid > .our-team {
+  padding-bottom: 94px;
+}
+.cards-grid > .hero-item {
+  flex-basis: calc(100% / 4- 30px);
+  margin-left: 30px;
+  padding-bottom: 94px;
+}
+.hero-item .hero-name {
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.hero-prophecy {
+  padding-bottom: 30px;
+}
+
+.we-do-header {
+  padding-bottom: 50px;
+}
+.footer-container {
+  padding: 60px 0;
 }
