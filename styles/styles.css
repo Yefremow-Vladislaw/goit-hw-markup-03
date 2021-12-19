@@ -6,7 +6,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+li {
   padding: 0px;
   margin: 0px;
 }
@@ -179,7 +180,6 @@ ul {
 .section {
   width: 100%;
   padding: 0 215px;
-  /* justify-content: center; */
 }
 .section:not(:first-child, :last-child) {
   padding-bottom: 94px;
@@ -194,10 +194,20 @@ ul {
   /* background-color: aqua; */
   padding: 25px 0px;
 }
+.portpholio-buttons {
+  padding: 6px 22px;
+}
 .nav-section,
 .site-nav,
-.auth-nav {
+.auth-nav,
+.header-buttons {
   display: flex;
+}
+.header-buttons {
+  justify-content: center;
+}
+.portpholio-buttons-item:not(:last-child) {
+  margin-right: 8px;
 }
 .nav-section {
   margin-right: auto;
@@ -245,22 +255,43 @@ ul {
   margin-left: -30px;
   margin-top: -30px;
 }
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.portpholio-nav {
+  padding-top: 100px;
+}
+.projects-list {
+  display: flex;
+  padding-bottom: 94px;
+}
 .cards-grid > .advantages-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   /* margin-top: 30px; */
 }
 .cards-grid > .we-do-item {
-  flex-basis: calc(100% / 3- 30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
 .cards-grid > .our-team {
   padding-bottom: 94px;
 }
 .cards-grid > .hero-item {
-  flex-basis: calc(100% / 4- 30px);
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   padding-bottom: 94px;
+}
+.projects-grid > .projects-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: auto;
 }
 .hero-item .hero-name {
   padding-bottom: 10px;
