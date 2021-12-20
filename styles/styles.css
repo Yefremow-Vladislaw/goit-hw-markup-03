@@ -15,6 +15,7 @@ img,
 a {
   display: block;
 }
+.portpholio-nav,
 .header-section,
 .main-section {
   background-color: #ffffff;
@@ -29,6 +30,9 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: black;
+}
+.header-section {
+  border-bottom: 1px solid #ececec;
 }
 .studio-adress,
 .contacts-header,
@@ -178,7 +182,7 @@ ul {
   padding: 15px;
 }
 .section {
-  width: 100%;
+  max-width: 100%;
   padding: 0 215px;
 }
 .section:not(:first-child, :last-child) {
@@ -187,11 +191,12 @@ ul {
 .header-section {
   display: flex;
   align-items: center;
+  /* justify-content: center; */
 }
 
-.link-nav {
+.link-nav,
+.contacts-header {
   display: block;
-  /* background-color: aqua; */
   padding: 25px 0px;
 }
 .portpholio-buttons {
@@ -212,10 +217,6 @@ ul {
 .nav-section {
   margin-right: auto;
 }
-.contacts-header {
-  display: block;
-  padding: 25px 0px;
-}
 .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -227,10 +228,11 @@ ul {
   margin-right: auto;
   display: flex;
 }
-.order-section {
-  padding-top: 200px;
-  padding-bottom: 260px;
+.order-list {
+  padding: 0 452px;
   background-color: #2f303a;
+  padding-bottom: 260px;
+  padding-top: 200px;
 }
 .order-list {
   text-align: center;
@@ -251,15 +253,15 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  /* align-items: center; */
+  /* align-content: center; */
   margin-left: -30px;
   margin-top: -30px;
 }
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+
+  align-content: center;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -303,6 +305,12 @@ ul {
 
 .we-do-header {
   padding-bottom: 50px;
+}
+.portpholio-nav {
+  padding-bottom: 56px;
+}
+.projects-header {
+  padding-top: 20px;
 }
 .footer-container {
   padding: 60px 0;
