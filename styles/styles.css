@@ -23,6 +23,15 @@ a {
 .footer-section {
   background-color: #2f303a;
 }
+.our-team {
+  background-color: #f5f4fa;
+}
+.hero-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
+}
 .site-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -281,13 +290,13 @@ ul {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
 }
-.cards-grid > .our-team {
+.our-team {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .cards-grid > .hero-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  padding-bottom: 94px;
 }
 .projects-grid > .projects-item {
   flex-basis: calc(100% / 3 - 30px);
@@ -295,9 +304,12 @@ ul {
   margin-top: 30px;
   margin-right: auto;
 }
-.hero-item .hero-name {
+.hero-name {
   padding-bottom: 10px;
   padding-top: 30px;
+}
+.hero-item {
+  padding-bottom: 0px;
 }
 .hero-prophecy {
   padding-bottom: 30px;
